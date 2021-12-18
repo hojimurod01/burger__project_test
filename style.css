@@ -1,0 +1,312 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+.container{
+    max-width: 1110px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+:root{
+    --White: #fff;
+    --MainFootBlackBg: #060002;
+    --TitleGreen: #69cf17;
+    --MenuTextColor: #7a7a7a;
+    --TextColor: #dedede;
+    --LogoInnerColor: #4e9f0d;
+    --LogoBorderColor: #62be19;
+    --Bg90: rgba(105, 207, 23, 0.90);
+    --Bg75: rgba(105, 207, 23, 0.75);
+}
+
+/* header boshlanishi */
+
+.header{
+    background: url(./img/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.logo{
+    text-transform: uppercase;
+    color: var(--White);
+    text-decoration: none;
+    background: var(--LogoInnerColor);
+    padding: 8px 19px;
+    border-radius: 5px;
+    border: 3px solid var(--LogoBorderColor);
+    font-weight: 700;
+    font-size: 24px;
+}
+.menu__link{
+    text-decoration: none;
+    color: var(--TitleGreen);
+    font-weight: 300;
+    font-size: 20px;
+    padding: 37px 18px;
+    transition: 0.5s;
+    display: inline-block;
+}
+.menu__link:hover{
+    background: var(--Bg75);
+    color: var(--White);
+}
+.busket{
+    color: var(--TitleGreen);
+    font-size: 20px;
+    font-weight: 300;
+    padding: 2px 8px;
+    background: var(--White);
+    margin-left: 6px;
+    border-radius: 50%;
+}
+
+.header__title{
+    font-size: 72px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: var(--TitleGreen);
+    line-height: 51px;
+}
+.header__subtitle{
+    font-weight: 400;
+    font-size: 26px;
+    color: var(--TitleGreen);
+    margin: 20px 0 35px;
+}
+.header__text{
+    color: var(--TextColor);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: justify;
+    margin-bottom: 75px;
+}
+.header__price{
+    font-size: 60px;
+    font-weight: 100;
+    padding: 30px 90px;
+    background: var(--Bg75);
+    color: var(--White);
+    width: max-content;
+}
+.header__content{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header .container{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    display: flex;
+}
+
+/* header tugashi */
+
+
+/* main boshlanishi */
+
+.main{
+    padding: 50px 0 0 0;
+    background: var(--MainFootBlackBg);
+}
+.main__list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 70px;
+}
+.main__list_link{
+    color: var(--MenuTextColor);
+    transition: 0.5s;
+    font-size: 20px;
+    margin-right: 50px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 700;
+}
+.main__list_link:hover{
+    color: var(--TitleGreen);
+}
+.burger__busket{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: -100%;
+    background: var(--Bg90);
+    color: var(--White);
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.5s;
+    transform: rotate(-5760deg);
+}
+.burger__price{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: var(--White);
+    font-weight: 400;
+    font-size: 24px;
+    padding: 21px 58px;
+    background: var(--Bg75);
+    display: inline-block;
+    transition: 0.5s;
+    transform: rotate(-5760deg);
+}
+.burger__img{
+    position: relative;
+    overflow: hidden;
+    width: max-content;
+    box-shadow: 0 0 15px 2px var(--White);
+    border: 2px solid var(--White);
+    border-radius: 2px;
+}
+.burger__img:hover .burger__price{
+    left: 350px;
+    transform: rotate(0);
+}
+.burger__img:hover .burger__busket{
+    left: 0;
+    top: 0;
+    transform: rotate(0);
+}
+.burger__content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.burger__title{
+    color: var(--TitleGreen);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 40px;
+}
+.burger__text{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--TextColor);
+    line-height: 25px;
+    text-align: justify;
+    max-width: 350px;
+}
+.main__burgers{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 50px 8px;
+    padding-bottom: 50px;
+}
+.main__recipe{
+    padding: 50px 0 100px 0;
+    background: url(./img/recipe-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.main__recipe_title{
+    text-transform: uppercase;
+    color: var(--TitleGreen);
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__recipe_title::after{
+    content: '';
+    width: 200px;
+    height: 1px;
+    background: var(--TitleGreen);
+    margin-top: 25px;
+}
+.main__recipe_text{
+    font-size: 18px;
+    color: var(--TextColor);
+    line-height: 27px;
+    text-align: justify;
+}
+.branches__title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: var(--TitleGreen);
+    padding: 50px 0;
+    background: var(--White);
+    font-size: 36px;
+    font-weight: 700;
+}
+
+/* main tugashi */
+
+
+/* footer boshlanishi */
+
+.footer__content{
+    display: flex;
+    flex-direction: column;
+}
+.footer__menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+}
+.footer__text{
+    color: var(--TextColor);
+    font-size: 16px;
+    margin-top: 45px;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+}
+.footer__menu_links{
+    margin: 25px;
+    color: var(--TextColor);
+    font-size: 16px;
+    text-decoration: none;
+}
+.footer__nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.tel{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--TitleGreen);
+    text-decoration: none;
+}
+.footer{
+    background: var(--MainFootBlackBg);
+    padding: 50px;
+}
+
+/* footer tugashi */

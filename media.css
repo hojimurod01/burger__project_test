@@ -1,0 +1,228 @@
+@media (max-width: 1100px) {
+    .main__burgers{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .burger{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }   
+    .main__list{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
+    .main__recipe{
+        padding: 50px 20px 100px;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .header__title {
+        font-size: 55px;
+    }
+    .header__price {
+        font-size: 50px;
+        padding: 20px 70px;
+    }
+
+
+    .footer__menu{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .footer__menu_links{
+        display: inline-block;
+        margin: 10px 25px;
+    }
+}
+
+@media (max-width: 770px) {
+    .main__burgers{
+        grid-template-columns: 1fr;
+    }
+    .main__list_link{
+        display: inline-block;
+        font-size: 16px;
+        margin: 10px 25px;
+    }
+    .main__list{
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 670px) {
+    .busket {
+        display: none;
+    }
+    .menu__link {
+        font-size: 14px;
+        padding: 30px 15px;
+    }
+    .header__title{
+        font-size: 35px;
+    }
+    .header__subtitle {
+        font-size: 22px;
+        margin: 15px 0 25px;
+    }
+    .header__text {
+        font-size: 15px;
+        margin-bottom: 40px;
+    }
+    .header__price{
+        padding: 15px 50px;
+    }
+    .logo{
+        font-size: 15px;
+        padding: 5px 10px;
+    }
+    
+
+    .main__recipe_title{
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+    .main__recipe_text{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .main__recipe{
+        padding: 25px 15px 50px;
+    }
+
+
+    .branches__title{
+        font-size: 25px;
+        padding: 25px 0;
+    }
+
+
+    .footer__menu_links{
+        font-size: 12px;
+    }
+    .footer__text{
+        font-size: 12px;
+    }
+    .tel{
+        font-size: 16px;
+    }
+    .logo {
+        font-size: 12px;
+        padding: 2px 5px;
+    }
+}
+
+@media (max-width: 470px) {
+    .nav{
+        flex-direction: column;
+        padding-top: 30px;
+    }
+    .header__title{
+        font-size: 25px;
+    }
+    .header__text{
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+    .header__subtitle{
+        font-size: 18px;
+        margin: 5px 0 15px;
+    }
+    .header__price{
+        font-size: 25px;
+        padding: 15px 30px;
+    }
+
+
+    .burger__img{
+        box-shadow: 0 0 10px 1px var(--White) ;
+    }
+    .burger__title{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .burger__text{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .burger__text{
+        max-width: 250px;
+    }
+    .main__list{
+        margin-bottom: 30px;
+    }
+    .burger__img img{
+        width: 250px;
+        height: 250px;
+    }
+    .burger__price{
+        font-size: 18px;
+        padding: 16px 35px;
+    }
+    .main__list_link{
+        font-size: 12px;
+    }
+    .main{
+        padding: 10px 0;
+    }
+
+
+    .main__recipe_title{
+        font-size: 20px;
+    }
+    .main__recipe_title::after{
+        margin-top: 15px;
+    }
+    .main__recipe_text{
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+
+    .branches__title{
+        font-size: 20px;
+    }
+
+
+    .footer__menu_links{
+        font-size: 10px;
+        margin: 10px 15px;
+    }
+    .footer__text{
+        font-size: 10px;
+        text-align: center;
+    }
+    .footer__nav{
+        flex-direction: column;
+    }
+    .tel{
+        font-size: 14px;
+        margin-top: 15px;
+    }
+    .logo {
+        font-size: 10px;
+        padding: 2px 5px;
+    }
+}
+
+@media (max-width:360px) {
+    .header__text{
+        max-width: 280px;
+    }
+    .menu__link{
+        padding: 20px 10px;
+    }
+    .main__recipe_title{
+        font-size: 18px;
+    }
+    .branches__title{
+        font-size: 18px;
+    }
+}
